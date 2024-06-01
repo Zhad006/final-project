@@ -1,0 +1,135 @@
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --header-background: #4CAF50;
+    --header-text-color: #fff;
+    --footer-background: #4CAF50;
+    --footer-text-color: #fff;
+    --button-background: #4CAF50;
+    --button-text-color: #fff;
+    --button-hover-background: #45a049;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .header, .footer {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  .main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1, h2, h3, p {
+    margin-bottom: 1em;
+  } 
+
+  button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-background);
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-item img {
+    width: 120px;
+    height: 200px;
+  }
+  
+  .book-item h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+  
+  .book-item p {
+    margin: 0.5em 0;
+  }
+
+  .book-item .description {
+    height: 60px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+  
+  .book-item a {
+    display: block;
+    text-align: center;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-item a:hover {
+    background-color: var(--button-hover-background);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

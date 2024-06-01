@@ -1,0 +1,16 @@
+.footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer.light {
+    --footer-background: #f1f1f1;
+    --footer-text-color: #333;
+  }
+  
+  .footer.dark {
+    --footer-background: #333;
+    --footer-text-color: #f1f1f1;
+  }
